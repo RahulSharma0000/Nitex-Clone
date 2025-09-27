@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'nitex';
+  src: url(/src/assets/fonts/FragmentMono-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'nitex2';
+  src: url(/src/assets/fonts/PPNeueMontreal-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'nitex-black';
+  src: url(/src/assets/fonts/PPRightGrotesk-SpatialBlack.woff2) format("woff2");
+}
