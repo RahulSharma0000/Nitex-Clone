@@ -1,3 +1,7 @@
+/* Polygon (hexagon) clip-path utility */
+.clip-path {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
 @import "tailwindcss";
 
 @font-face {
@@ -14,4 +18,10 @@
 @font-face {
   font-family: 'nitex-black';
   src: url(/src/assets/fonts/PPRightGrotesk-SpatialBlack.woff2) format("woff2");
+}
+
+@utilitys{
+  .clip-path{
+    .clip-path: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)'
+  }
 }
