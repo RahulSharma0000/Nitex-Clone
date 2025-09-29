@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
+import img3 from '../assets/images/img-3.webp'
+import girlCurlyHair from '../assets/images/girl-curly-hair.webp'
 
 
 const NxHover = () => {
@@ -64,7 +66,7 @@ const NxHover = () => {
   {/* Left side image */}
   <div className="w-1/2 h-full">
     <img
-      src="/src/assets/images/img-3.webp"
+      src={img3}
       alt=""
       className="w-full h-full object-cover"
     />
@@ -73,7 +75,7 @@ const NxHover = () => {
   {/* Right side image */}
   <div className="w-1/2 h-full">
     <img
-      src="/src/assets/images/girl-curly-hair.webp"
+      src={girlCurlyHair}
       alt=""
       className="w-full h-full object-cover"
     />

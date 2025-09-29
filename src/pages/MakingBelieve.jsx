@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import boyImg from '../assets/images/boy-img.webp'
 
 const MakingBelieve = () => {
 
@@ -26,7 +27,7 @@ const MakingBelieve = () => {
   {/* Left Image */}
   <div className="left-box w-1/2 h-full">
     <img
-      src="/src/assets/images/boy-img.webp"
+      src={boyImg}
       className="w-full h-full object-cover"
       alt=""
     />

@@ -1,5 +1,7 @@
 import React from 'react'
 import HeroText from '../components/HeroText'
+import heroImg1 from '../assets/images/hero-img1.webp'
+import heroImg2 from '../assets/images/hero-img2.webp'
 
 const HeroPage = () => {
   return (
@@ -9,7 +11,7 @@ const HeroPage = () => {
         {/* Left Image */}
         <div className="left-div w-full md:w-1/2 h-[50vh] md:h-screen">
           <img
-            src="/src/assets/images/hero-img1.webp"
+            src={heroImg1}
             alt=""
             className="w-full h-full object-cover"
           />
@@ -18,7 +20,7 @@ const HeroPage = () => {
         {/* Right Image */}
         <div className="left-div w-full md:w-1/2 h-[50vh] md:h-screen">
           <img
-            src="/src/assets/images/hero-img2.webp"
+            src={heroImg2 }
             alt=""
             className="w-full h-full object-cover"
           />

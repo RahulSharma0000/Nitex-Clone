@@ -3,6 +3,7 @@ import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import tailorvideo from '../assets/videos/tailor-img.mp4'
 
 const Supply = () => {
   useGSAP(() => {
@@ -47,7 +48,7 @@ const Supply = () => {
     {/* Right Section */}
     <div className="supply-right w-full h-1/2 sm:w-1/2 sm:h-[130vh]">
       <video
-        src="/src/assets/videos/tailor-img.mp4"
+        src={tailorvideo}
         className="w-full h-full object-cover"
         autoPlay
         muted

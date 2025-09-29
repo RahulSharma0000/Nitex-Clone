@@ -3,6 +3,7 @@ import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import hoverImg from '../assets/images/hover-img.webp'
 
 const Impactpage = () => {
 useGSAP(() => {
@@ -98,7 +99,7 @@ useGSAP(() => {
           <div className="relative p-2 sm:p-4 mt-2 sm:mt-5 z-0">
             <div className="clip-path w-[50vw] h-[25vw] sm:w-[8vw] sm:h-[14vh] rounded-lg z-0">
               <img
-                src="/src/assets/images/hover-img.webp"
+                src={hoverImg}
                 alt=""
                 className="w-full h-full object-cover"
               />
