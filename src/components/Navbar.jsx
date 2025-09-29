@@ -2,11 +2,11 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between items-center px-3 py-4 bg-transparent w-full fixed top-0 left-0  z-10'>
+    <div className='flex flex-col lg:flex-row justify-between items-start lg:items-center px-3 py-4 bg-transparent w-dvw fixed top-0 left-0  z-10'>
       <div ><svg viewBox="0 0 614 100" fill="#D7FF00" xmlns="http://www.w3.org/2000/svg" class="h-4 text-(--logo) transition-colors" data-v-61df4c18=""><path d="M141 100C134.11 100 128.5 94.39 128.5 87.5C128.5 80.61 134.11 75 141 75C147.89 75 153.5 80.61 153.5 87.5C153.5 94.39 147.89 100 141 100ZM141 76.42C134.89 76.42 129.92 81.39 129.92 87.5C129.92 93.61 134.89 98.58 141 98.58C147.11 98.58 152.08 93.61 152.08 87.5C152.08 81.39 147.11 76.42 141 76.42Z" fill="#D7FF00"></path><path d="M136.36 81.87H142.67C144.8 81.87 146.12 83.14 146.12 85.01C146.12 86.64 145.15 87.87 143.63 88.1V88.22C145.02 88.32 145.28 89.03 145.58 89.94L146.74 93.44H144.03L143.04 90.4C142.78 89.57 142.3 89.21 141.09 89.21H139.03V93.44H136.37V81.88L136.36 81.87ZM143.41 85.55C143.41 84.51 142.83 83.93 141.41 83.93H139.02V87.18H141.41C142.83 87.18 143.41 86.6 143.41 85.54V85.55Z" fill="#D7FF00"></path><path d="M111 100H1L37.4 0H147.4L111 100Z" fill="#D7FF00"></path><path d="M234.8 0H268.8V100H227.33L203.33 46.67H202V100H168V0H209.47L233.47 53.33H234.8V0ZM278.13 100V0H318.13V100H278.13ZM414.13 0V31.2H390.13V100H350.13V31.2H326.13V0H414.13ZM506.13 0V28.4H462.13V37.33H502.13V62.66H462.13V71.59H506.13V99.99H422.13V0H506.13Z" fill="D7FF00"></path><path d="M556.5 0L562.23 34.8H563.56L569.16 0H612.89L594.88 49.73V50.53L612.89 100H569.16L563.56 64.93H562.23L556.5 100H512.77L530.78 50.53V49.73L512.77 0H556.5Z" fill="D7FF00"></path></svg></div>
 
-      <div className='flex gap-8 text-black justify-end  text-sm font-medium'>
-        <h4 className='text-start pl-2 pr-[18vw] py-2 bg-[#ccea2590]  '>MEET NITEX</h4>
+      <div className='flex gap-8 text-black justify-end  text-sm font-medium flex-col lg:flex-row pt-5 '>
+        <h4 className=' hovert text-start pl-2 pr-[18vw] py-2 bg-[#ccea2590]  '>MEET NITEX</h4>
         <h4 className='text-start pl-2 pr-[18vw] py-2 bg-[#929292]  '>GET NITEX</h4>
         
       </div>

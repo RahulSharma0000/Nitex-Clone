@@ -17,7 +17,15 @@
 
 @font-face {
   font-family: 'nitex-black';
-  src: url(/src/assets/fonts/PPRightGrotesk-SpatialBlack.woff2) format("woff2");
+  src: url(/src/assets/fonts/RightGrotesk-Medium.otf) format("opentype");
+
+
+}
+
+
+@font-face {
+  font-family: 'nitex-cursive' ;
+  src: url(/src/assets/fonts/AestheticLetteringItalic-Italic.otf) format("opentype");
 }
 
 @utilitys{

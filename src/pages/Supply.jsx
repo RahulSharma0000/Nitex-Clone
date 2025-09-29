@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Supply = () => {
   useGSAP(() => {
     gsap.from(".supply-left", {
-      x: -300,
+      x: -500,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".supply-left",
@@ -22,26 +22,42 @@ const Supply = () => {
 
 
   return (
-    <section className="w-screen h-[130vh] overflow-hidden">
-      <div className="supply-continer h-[130vh] w-dvw  flex  pl-10">
-        <div className="supply-left w-1/2 h-[130vh]  pt-20 relative ">
-          <div>
-            <h4 className="text-lg text-nitex-black font-semibold ">[02]What we do</h4>
-            <h3 className="text-[5vw] text-nitex-black font-extrabold tracking-tight leading-[5vw] uppercase pt-5">The new <br /> standard in <br />fashion <br />supply</h3>
-          </div>
-          <p className=" text-sm text-nitex-black font-medium absolute bottom-10 right-1.5 text-center">As the design-driven engine <br />for today’s agile brands,  <br />NITEX unites trend forecasting, <br />in-house prototyping,<br /> fit validation and global <br />delivery into one seamless workflow. <br /> We focus on trending design, <br />instead of the trendiest design, <br /> to help our brand partners succeed.</p>
-        </div>
-        <div className="supply-right w-1/2 h-[130vh]">
-          <video
-            src="/src/assets/videos/tailor-img.mp4"
-            className="object-cover h-[130vh]"
-            autoPlay
-            muted
-            loop
-          ></video>
-        </div>
+  <section className="w-screen h-auto sm:h-[130vh] overflow-hidden">
+  <div className="supply-continer flex flex-col sm:flex-row w-full h-auto sm:h-[130vh] sm:py-10">
+    
+    {/* Left Section */}
+    <div className="supply-left w-full h-1/2 sm:w-1/2 sm:h-[130vh] pt-10 sm:pt-20 relative px-4 sm:px-10">
+      <div>
+        <h4 className="text-lg text-nitex-black font-semibold">[02] What we do</h4>
+        <h3 className="text-[10vw] sm:text-[5vw] text-nitex-black font-extrabold tracking-tight leading-[11vw] sm:leading-[5vw] uppercase pt-5">
+          The new <br /> standard in <br /> fashion <br /> supply
+        </h3>
       </div>
-    </section>
+      <p className="text-sm text-nitex-black font-medium mt-6 sm:absolute sm:bottom-10 sm:right-1.5 sm:text-center">
+        As the design-driven engine <br />for today’s agile brands,  
+        <br />NITEX unites trend forecasting,  
+        <br />in-house prototyping,<br /> fit validation and global  
+        <br />delivery into one seamless workflow.  
+        <br /> We focus on trending design,  
+        <br />instead of the trendiest design,  
+        <br /> to help our brand partners succeed.
+      </p>
+    </div>
+
+    {/* Right Section */}
+    <div className="supply-right w-full h-1/2 sm:w-1/2 sm:h-[130vh]">
+      <video
+        src="/src/assets/videos/tailor-img.mp4"
+        className="w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+      ></video>
+    </div>
+
+  </div>
+</section>
+
   );
 };
 
